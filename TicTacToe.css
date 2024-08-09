@@ -1,0 +1,68 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #4e003b;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+.tablero {
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  grid-template-rows: repeat(3, 100px);
+  gap: 5px;
+}
+
+.casilla {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(255, 255, 255);
+  border: 5px solid rgb(255, 234, 0);
+  font-size: 2rem;
+  cursor: pointer;
+  width: 100px;
+  height: 100px;
+  transition: background-color 0.3s ease;
+}
+
+.casilla.X {
+  color: #6b0150;
+}
+
+.casilla.O {
+  color: rgb(255, 99, 206);
+}
+
+.casilla.usada {
+  pointer-events: none;
+  background-color: #ffffffb2;
+}
+
+.estado {
+  margin-top: 20px;
+  text-align: center;
+  color: rgb(255, 234, 0);
+}
+
+#pensaje {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+#puntos p {
+  margin: 5px 0;
+}
+
+#botonRestart {
+  margin-top: 10px;
+}
